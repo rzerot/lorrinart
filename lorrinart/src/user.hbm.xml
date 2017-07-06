@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+
+	<class name="clientvideo.POJO.User" table="USERS">
+        <id name="user_id" type="int">
+            <column name="USER_ID" />
+            <generator class="identity" />
+        </id>
+        <property name="name" type="java.lang.String">
+            <column name="USERNAME" />
+        </property>
+        
+          <property name="password" type="java.lang.String">
+        	<column name="USER_PASSWORD" />
+        </property>
+    </class>
+</hibernate-mapping>

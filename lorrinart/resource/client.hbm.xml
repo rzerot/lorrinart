@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+
+	<class name="clientvideo.POJO.Client" table="CLIENTS">
+        <id name="client_id" type="int">
+            <column name="CLIENT_ID" />
+            <generator class="sequence">
+            <param name="sequence">clients_seq</param>
+             </generator>
+        </id>
+        <property name="nameOne" type="java.lang.String">
+            <column name="NAME_ONE" />
+        </property>
+        <property name="nameTwo" type="java.lang.String">
+            <column name="NAME_TWO" />
+        </property>
+        <property name="nameOneImage" type="java.lang.String">
+        	<column name="NAME_ONE_IMAGE" />
+        </property>
+        <property name="nameTwoImage" type="java.lang.String">
+        	<column name="NAME_TWO_IMAGE" />
+        </property>
+         <property name="linkOne" type="java.lang.String">
+        	<column name="LINK_ONE" />
+        </property>
+           <property name="linkTwo" type="java.lang.String">
+        	<column name="LINK_TWO" />
+        </property>
+         <property name="username" type="java.lang.String">
+        	<column name="USERNAME" />
+        </property>
+        <property name="clientPass" type="java.lang.String">
+        	<column name="PASSWORD" />
+        </property>
+    </class>
+</hibernate-mapping>
